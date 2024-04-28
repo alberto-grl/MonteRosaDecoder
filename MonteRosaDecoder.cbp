@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="MonteRosaDecoder" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/MonteRosaDecoder" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+				<Linker>
+					<Add library="libportaudio" />
+					<Add library="libfftw3f" />
+					<Add library="libpthread" />
+					<Add library="libm" />
+					<Add library="libncurses" />
+					<Add library="libfftw3" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/MonteRosaDecoder" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="CWDecoder.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="globals.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="main.h" />
+		<Unit filename="pa_memorybarrier.h" />
+		<Unit filename="pa_ringbuffer.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="pa_ringbuffer.h" />
+		<Unit filename="pa_util.h" />
+		<Extensions />
+	</Project>
+</CodeBlocks_project_file>

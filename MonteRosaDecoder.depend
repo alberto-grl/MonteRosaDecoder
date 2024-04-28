@@ -1,0 +1,53 @@
+# depslib dependency file v1.0
+1713300694 source:/home/alberto/MonteRosaDecoder/MonteRosaDecoder/pa_ringbuffer.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	"pa_ringbuffer.h"
+	<string.h>
+	"pa_memorybarrier.h"
+
+1713628341 /home/alberto/MonteRosaDecoder/MonteRosaDecoder/pa_ringbuffer.h
+	<sys/types.h>
+
+1713300694 /home/alberto/MonteRosaDecoder/MonteRosaDecoder/pa_memorybarrier.h
+	<libkern/OSAtomic.h>
+	<stdatomic.h>
+	<intrin.h>
+
+1714316769 source:/home/alberto/MonteRosaDecoder/MonteRosaDecoder/main.c
+	<time.h>
+	<errno.h>
+	<ncurses.h>
+	"globals.h"
+	<stdio.h>
+	<stdlib.h>
+	<stdint.h>
+	<string.h>
+	<math.h>
+	<pthread.h>
+	"portaudio.h"
+	"pa_ringbuffer.h"
+	"pa_util.h"
+	"fftw3.h"
+	"main.h"
+
+1713300694 /home/alberto/MonteRosaDecoder/MonteRosaDecoder/pa_util.h
+	"portaudio.h"
+
+1714211933 /home/alberto/MonteRosaDecoder/MonteRosaDecoder/main.h
+
+1714233109 source:/home/alberto/MonteRosaDecoder/MonteRosaDecoder/CWDecoder.c
+	<time.h>
+	<stdio.h>
+	<stdlib.h>
+	<stdint.h>
+	<string.h>
+	<math.h>
+	"pa_ringbuffer.h"
+	"globals.h"
+	"main.h"
+
+1714211933 /home/alberto/MonteRosaDecoder/MonteRosaDecoder/globals.h
+	"stdint.h"
+
