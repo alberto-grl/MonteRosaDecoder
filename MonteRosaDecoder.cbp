@@ -45,6 +45,14 @@
 		<Unit filename="globals.h">
 			<Option target="&lt;{~None~}&gt;" />
 		</Unit>
+		<Unit filename="logger.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="logger.h" />
+		<Unit filename="loggerconf.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="loggerconf.h" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>

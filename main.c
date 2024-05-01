@@ -20,6 +20,8 @@ CW Decoder based on WB7FHC's Morse Code Decoder v1.1
 
  https://www.musicdsp.org/en/latest/Filters/237-one-pole-filter-lp-and-hp.html
 
+ Log support:
+ https://github.com/yksz/c-logger
 
 This software is provided 'as-is', without any express or implied
 warranty. In no event will the authors be held liable for any damages
@@ -67,6 +69,8 @@ freely, subject to the following restrictions:
 
 #include "fftw3.h"
 #include "main.h"
+
+#include "logger.h"
 
 
 
@@ -488,7 +492,7 @@ void PrintSpectrogram(double *x )
         if (FilteredRxVal - FilteredNoiseFloor > 20)
         {
         //shortens key down
-            if (StartSquelchCounter < 10)
+            if (StartSquelchCounter < 12)
             {
                 StartSquelchCounter++;
             }
@@ -555,11 +559,17 @@ int main(void)
     int16_t Sample;
     float LowPassParam;
 
+    logger_initFileLogger("MonteRosaLog.txt", 1024 * 1024, 5);
+    logger_setLevel(LogLevel_INFO);
+
+        LOG_INFO("Start logging");
+
+
+
 //Coefficient calculation:
 //x = exp(-2.0*pi*freq/samplerate);
 //a0 = 1.0-x;
 //b1 = -x;
-
 
     LowPassParam = exp(-2.0*M_PI* 20 /(44100 / 128));
     RxVal_a0 = 1.0-LowPassParam;

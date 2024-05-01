@@ -5,7 +5,7 @@ Customized for IQ2MI/B, a ham radio beacon located on Monte Rosa, 4,556 m asl.
 
 I have been using an RTL-SDR dongle. Call it with something like
 
-rtl_fm -f 144414k -M usb -s 260k -r 48000 -l 1 -p 75 -o 4 -g 40  |  tee >(./MonteRosaDecoder) >(aplay -r 48000 -f S16_LE -t raw -c 1) >/dev/null
+rtl_fm -f 144414k -M usb -s 260k -r 48000 -p 75 -o 4 -g 40  |  tee >(./MonteRosaDecoder) >(aplay -r 48000 -f S16_LE -t raw -c 1) >/dev/null
 
 An example of telemetry is:
 

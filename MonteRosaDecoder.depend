@@ -15,7 +15,7 @@
 	<stdatomic.h>
 	<intrin.h>
 
-1714316769 source:/home/alberto/MonteRosaDecoder/MonteRosaDecoder/main.c
+1714505415 source:/home/alberto/MonteRosaDecoder/MonteRosaDecoder/main.c
 	<time.h>
 	<errno.h>
 	<ncurses.h>
@@ -31,13 +31,14 @@
 	"pa_util.h"
 	"fftw3.h"
 	"main.h"
+	"logger.h"
 
 1713300694 /home/alberto/MonteRosaDecoder/MonteRosaDecoder/pa_util.h
 	"portaudio.h"
 
 1714211933 /home/alberto/MonteRosaDecoder/MonteRosaDecoder/main.h
 
-1714233109 source:/home/alberto/MonteRosaDecoder/MonteRosaDecoder/CWDecoder.c
+1714505564 source:/home/alberto/MonteRosaDecoder/MonteRosaDecoder/CWDecoder.c
 	<time.h>
 	<stdio.h>
 	<stdlib.h>
@@ -47,7 +48,35 @@
 	"pa_ringbuffer.h"
 	"globals.h"
 	"main.h"
+	"logger.h"
 
 1714211933 /home/alberto/MonteRosaDecoder/MonteRosaDecoder/globals.h
 	"stdint.h"
+
+1714502771 source:/home/alberto/MonteRosaDecoder/MonteRosaDecoder/logger.c
+	"logger.h"
+	<assert.h>
+	<stdarg.h>
+	<stdlib.h>
+	<time.h>
+	<winsock2.h>
+	<pthread.h>
+	<sys/time.h>
+	<sys/syscall.h>
+	<unistd.h>
+
+1714502771 /home/alberto/MonteRosaDecoder/MonteRosaDecoder/logger.h
+	<stdio.h>
+	<string.h>
+
+1714502771 source:/home/alberto/MonteRosaDecoder/MonteRosaDecoder/loggerconf.c
+	"loggerconf.h"
+	<assert.h>
+	<ctype.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"logger.h"
+
+1714502771 /home/alberto/MonteRosaDecoder/MonteRosaDecoder/loggerconf.h
 

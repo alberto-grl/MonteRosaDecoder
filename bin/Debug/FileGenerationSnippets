@@ -8,5 +8,5 @@ riceve, visualizza e manda audio
 rtl_fm -f 144414k -M usb -s 260k -r 48k -l 1 -p 75 -o 4 -g 50  |  tee >(./MonteRosaDecoder) >(play -r 44100 -t raw -e signed-integer -b 16 -c 1 -V1 -q -) >/dev/null
 
 audio migliore, senza interruzioniperiodiche regolari che sembrano da buffer vuoto
-rtl_fm -f 144414k -M usb -s 260k -r 48000 -l 1 -p 75 -o 4 -g 50  |  tee >(./MonteRosaDecoder) >(aplay -r 48000 -f S16_LE -t raw -c 1) >/dev/null
+rtl_fm -f 144414k -M usb -s 260k -r 48000 -p 75 -o 4 -g 50  |  tee >(./MonteRosaDecoder) >(aplay -r 48000 -f S16_LE -t raw -c 1) >/dev/null
 
